@@ -14,6 +14,19 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.jvnet.jaxb2_commons</groupId>
+            <artifactId>jaxb2-basics-runtime</artifactId>
+            <version>0.9.0</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
+        </dependency>
+    </dependencies>
+
     <build>
         <plugins>
             <plugin>
@@ -47,11 +60,19 @@
                         <goals>
                             <goal>xjc</goal>
                         </goals>
-                        <configuration>
-                            <extension>true</extension>
-                        </configuration>
                     </execution>
                 </executions>
+                <configuration>
+                    <extension>true</extension>
+                    <arguments>-XtoString -XhashCode -Xequals</arguments>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.jvnet.jaxb2_commons</groupId>
+                        <artifactId>jaxb2-basics</artifactId>
+                        <version>0.9.0</version>
+                    </dependency>
+                </dependencies>
             </plugin>
         </plugins>
     </build>
