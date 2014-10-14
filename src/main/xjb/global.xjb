@@ -12,4 +12,18 @@
                        parseMethod="javax.xml.bind.DatatypeConverter.parseDateTime"
                        printMethod="javax.xml.bind.DatatypeConverter.printDateTime" />
     </jaxb:globalBindings>
+
+    <jaxb:bindings schemaLocation="../xsd/Band.xsd" node="/xs:schema">
+        <jaxb:schemaBindings>
+            <jaxb:package name="se.patrikbergman.java.jaxb.bandapp.entity">
+                <jaxb:javadoc>
+                    <![CDATA[<body>Band</body>]]>
+                </jaxb:javadoc>
+            </jaxb:package>
+            <jaxb:nameXmlTransform>
+                <jaxb:typeName prefix="JAXB_"/>
+            </jaxb:nameXmlTransform>
+        </jaxb:schemaBindings>
+    </jaxb:bindings>
+
 </jaxb:bindings>

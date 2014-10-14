@@ -1,0 +1,9 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+           xmlns:bnd="http://www.patrikbergman.se/java/jaxb/bandapp/entity/"
+           targetNamespace="http://www.patrikbergman.se/java/jaxb/bandapp/">
+
+    <xs:import namespace="http://www.patrikbergman.se/java/jaxb/bandapp/entity/" schemaLocation="Band.xsd"/>
+
+    <xs:element name="band" type="bnd:Band"/>
+
+</xs:schema>

@@ -43,14 +43,15 @@
                 <executions>
                     <execution>
                         <id>xjc</id>
+                        <phase>generate-sources</phase>
                         <goals>
                             <goal>xjc</goal>
                         </goals>
+                        <configuration>
+                            <extension>true</extension>
+                        </configuration>
                     </execution>
                 </executions>
-                <configuration>
-                    <arguments>-extension -npa -b ${project.basedir}/src/main/xsd/global.xjb</arguments>
-                </configuration>
             </plugin>
         </plugins>
     </build>
