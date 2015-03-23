@@ -6,14 +6,15 @@
                jaxb:extensionBindingPrefixes="xjc">
 
     <jaxb:globalBindings>
-        <xjc:simple />
-        <xjc:serializable uid="-1" />
+        <xjc:simple/>
+        <xjc:serializable uid="-1"/>
         <jaxb:javaType name="java.util.Calendar" xmlType="xs:dateTime"
                        parseMethod="javax.xml.bind.DatatypeConverter.parseDateTime"
-                       printMethod="javax.xml.bind.DatatypeConverter.printDateTime" />
+                       printMethod="javax.xml.bind.DatatypeConverter.printDateTime"/>
+        <xjc:serializable uid="1" />
     </jaxb:globalBindings>
 
-    <jaxb:bindings schemaLocation="../xsd/Band.xsd" node="/xs:schema">
+    <jaxb:bindings schemaLocation="Band.xsd" node="/xs:schema">
         <jaxb:schemaBindings>
             <jaxb:package name="se.patrikbergman.java.jaxb.bandapp.entity">
                 <jaxb:javadoc>

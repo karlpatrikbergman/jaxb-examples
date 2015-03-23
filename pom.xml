@@ -65,12 +65,16 @@
                         <goals>
                             <goal>xjc</goal>
                         </goals>
+                        <configuration>
+                            <schemaDirectory>src/main/resources</schemaDirectory>
+                            <schemaFiles>*.xsd</schemaFiles>
+                            <bindingDirectory>src/main/resources</bindingDirectory>
+                            <bindingFiles>global.xjb</bindingFiles>
+                            <extension>true</extension>
+                            <arguments>-XtoString -XhashCode -Xequals</arguments>
+                        </configuration>
                     </execution>
                 </executions>
-                <configuration>
-                    <extension>true</extension>
-                    <arguments>-XtoString -XhashCode -Xequals</arguments>
-                </configuration>
                 <dependencies>
                     <dependency>
                         <groupId>org.jvnet.jaxb2_commons</groupId>
@@ -78,6 +82,8 @@
                         <version>0.9.1</version>
                     </dependency>
                 </dependencies>
+
+
             </plugin>
         </plugins>
     </build>
