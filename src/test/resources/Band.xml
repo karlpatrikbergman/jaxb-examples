@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:band xmlns="http://www.patrikbergman.se/java/jaxb/bandapp/entity/" xmlns:ns2="http://www.patrikbergman.se/java/jaxb/bandapp/">
+    <id>0</id>
+    <name>Accept</name>
+    <description>Heavy Metal band from the eighties</description>
+</ns2:band>
