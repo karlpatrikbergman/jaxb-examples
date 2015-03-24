@@ -5,20 +5,15 @@
                xmlns:xs="http://www.w3.org/2001/XMLSchema"
                jaxb:extensionBindingPrefixes="xjc">
 
-    <jaxb:globalBindings>
-        <xjc:simple/>
-        <xjc:serializable uid="-1"/>
-        <jaxb:javaType name="java.util.Calendar" xmlType="xs:dateTime"
-                       parseMethod="javax.xml.bind.DatatypeConverter.parseDateTime"
-                       printMethod="javax.xml.bind.DatatypeConverter.printDateTime"/>
-        <xjc:serializable uid="1" />
-    </jaxb:globalBindings>
-
-    <jaxb:bindings schemaLocation="Band.xsd" node="/xs:schema">
+    <jaxb:bindings schemaLocation="CommonTypes.xsd" node="/xs:schema">
+        <jaxb:globalBindings>
+            <xjc:simple/>
+            <jaxb:serializable uid="1" />
+        </jaxb:globalBindings>
         <jaxb:schemaBindings>
-            <jaxb:package name="se.patrikbergman.java.jaxb.bandapp.entity">
+            <jaxb:package name="se.patrikbergman.java.jaxb.schemagenerated.common">
                 <jaxb:javadoc>
-                    <![CDATA[<body>Band</body>]]>
+                    <![CDATA[<body> Common types</body>]]>
                 </jaxb:javadoc>
             </jaxb:package>
             <jaxb:nameXmlTransform>

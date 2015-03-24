@@ -1,0 +1,33 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+    targetNamespace="http://www.patrikbergman.se/musicworld/commontypes/version1/">
+
+    <!-- Date in format YYYY-MM-DD, example 2012-10-01 -->
+    <xs:simpleType name="Date">
+        <xs:restriction base="xs:string">
+            <xs:length fixed="true" value="10"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Timestamp in format YYYY-MM-DDThh:mm:ss, example 2012-10-01T14:00:20 -->
+    <xs:simpleType name="Timestamp">
+        <xs:restriction base="xs:string">
+            <xs:length fixed="true" value="19"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Time in format hh:mm:ss, example 14:00:20 -->
+    <xs:simpleType name="Time">
+        <xs:restriction base="xs:string">
+            <xs:length fixed="true" value="8"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Type for objects identified by a code, with a corresponding text -->
+    <xs:complexType name="Band">
+        <xs:sequence>
+            <xs:element minOccurs="1" maxOccurs="1" name="name" type="xs:string"/>
+            <xs:element minOccurs="1" maxOccurs="1" name="description" type="xs:string"/>
+            <xs:element minOccurs="1" maxOccurs="1" name="rockFactor" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

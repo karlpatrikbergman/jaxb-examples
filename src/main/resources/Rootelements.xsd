@@ -1,10 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
-           xmlns:bnd="http://www.patrikbergman.se/java/jaxb/bandapp/entity/"
-           targetNamespace="http://www.patrikbergman.se/java/jaxb/bandapp/">
-
-    <xs:import namespace="http://www.patrikbergman.se/java/jaxb/bandapp/entity/" schemaLocation="Band.xsd"/>
-
-    <xs:element name="band" type="bnd:Band"/>
-
+       targetNamespace="http://www.patrikbergman.se/musicworld/"
+       xmlns:com="http://www.patrikbergman.se/musicworld/commontypes/version1/">
+       <xs:import namespace="http://www.patrikbergman.se/musicworld/commontypes/version1/"
+              schemaLocation="CommonTypes.xsd"/>
+      
+       <xs:element name="band" type="com:Band"/>
 </xs:schema>

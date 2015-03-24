@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ns2:band xmlns="http://www.patrikbergman.se/java/jaxb/bandapp/entity/" xmlns:ns2="http://www.patrikbergman.se/java/jaxb/bandapp/">
-    <id>0</id>
+<ns2:band xmlns="http://www.patrikbergman.se/musicworld/commontypes/version1/" xmlns:ns2="http://www.patrikbergman.se/musicworld/">
     <name>Accept</name>
-    <description>Heavy Metal band from the eighties</description>
+    <description>Accept is a German heavy metal band originally assembled by former vocalist Udo Dirkschneider, guitarist Wolf Hoffmann and bassist Peter Baltes.</description>
+    <rockFactor>10</rockFactor>
 </ns2:band>
